@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 df = pd.read_csv("diabetes.csv")
 #I put this line as merely comment because I'm not sure only keeping 3 features which aren't super accurate on their own is a good ideaI
-#In addition feature engineering might be performed later on
 #df = df.drop(columns=["Pregnancies","BloodPressure","SkinThickness","Insulin","DiabetesPedigreeFunction"])
 #randomise
 df = df.reindex(np.random.permutation(df.index))
